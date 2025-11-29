@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backpack Diaries</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER IMAGE */
+header{
+    height:60vh;
+    background:url('https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=2159&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+header h1{
+    font-size:3.5rem;
+    text-shadow:2px 2px 10px black;
+}
+
+/* GENERAL SECTION */
+section{
+    padding:40px 10%;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+/* Budget Box */
+.budget-box{
+    background:#f8f8f8;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:600px;
+    margin:auto;
+}
+
+/* Cards for Places */
+.place-card{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.place-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Image Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Backpack Diaries</h1>
+    
+</header>
+ <h3 style="text-align: center;">a personal travel journal or guide for adventurous students</h3>
+<section>
+    <input type="text" placeholder="Search destination..." id="search" style="width:50%; padding:10px; margin-bottom:20px; border-radius:5px; border:1px solid #888;">
+</section>
+<a style="text-decoration: none; color: white;" href="miniproject.html"><p style="text-align: center; padding: 10px; background-color: rgba(0, 0, 0, 0.833);">LogIn</p></a>
+
+<!-- BUDGET TRIP PLANNING -->
+<section>
+    <h2>Filter by Budget</h2>
+    <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-bottom:30px;">
+        <button style="padding:10px 15px; border:none; background:#1e88e5; color:white; border-radius:5px; cursor:pointer;">₹3,000-₹5,000</button>
+        <button style="padding:10px 15px; border:none; background:#1e88e5; color:white; border-radius:5px; cursor:pointer;">₹5,000-₹10,000</button>
+        <button style="padding:10px 15px; border:none; background:#1e88e5; color:white; border-radius:5px; cursor:pointer;">₹10,000-₹15,000</button>
+    </div>
+</section>
+<!-- PLACES SECTION -->
+<section>
+    <h2>Top Student Travel Destinations</h2>
+
+    <!-- Dehradun -->
+    <div class="place-card">
+        <h3>DEHRADUN</h3>
+        <img src="img/dehradun.webp">
+        <p>Known for cool climate, nature, food and student-friendly spots.</p>
+    </div>
+
+    <!-- Rishikesh -->
+    <div class="place-card">
+        <h3>RISHIKESH</h3>
+        <img src="img/rishikesh.jpg">
+        <p>Best for rafting, camping, spirituality and adventure activities.</p>
+    </div>
+
+    <!-- jaipur -->
+    <div class="place-card">
+        <h3>JAIPUR</h3>
+        <img src="img/jaipur.jpg">
+        <p>Palaces, Culture, Heritage, Colors, Royalty and historical architecture.</p>
+    </div>
+
+    <!-- Kasol -->
+    <div class="place-card">
+        <h3>KASOL</h3>
+        <img src="img/kasol.webp">
+        <p>Perfect for trekking, riverside cafes and peaceful mountains.</p>
+    </div>
+
+    <!-- Manali -->
+    <div class="place-card">
+        <h3>MANALI</h3>
+        <img src="img/manali.png">
+        <p>Best for snow adventures, Solang valley and scenic beauty.</p>
+    </div>
+
+    <!-- varanasi -->
+    <div class="place-card">
+        <h3>VARANASI</h3>
+        <img src="img/varanasi.jpg">
+        <p>Ghats, Spirituality, Ganga, Temples, Tradition, Culture</p>
+    </div>
+
+</section>
+<section>
+    <h2>Student Travel Tips</h2>
+    <ul style="list-style-type:circle; max-width:600px; margin:auto; text-align:left; line-height:1.6;">
+        <li>Book hostels or budget hotels in advance.</li>
+        <li>Use public transport or shared rides to save money.</li>
+        <li>Try local food for authentic experiences.</li>
+        <li>Plan adventure activities early to avoid queues.</li>
+        <li>Pack light to move freely between destinations.</li>
+    </ul>
+</section>
+
+<!-- IMAGE GALLERY -->
+<section>
+    <h2>Travel Gallery</h2>
+    <div class="gallery">
+        <img src="img/ganga.jpg">
+        <img src="img/rafting.webp">
+        <img src="img/food.jpg">
+        <img src="img/trek.jpg">
+    </div>
+</section>
+<section>
+    <h2>Useful Links</h2>
+    <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
+        <a href="https://www.irctc.co.in" target="_blank" style="padding:10px 15px; background:#4caf50; color:white; border-radius:5px; text-decoration:none;">Train Booking</a>
+        <a href="https://www.redbus.in" target="_blank" style="padding:10px 15px; background:#f44336; color:white; border-radius:5px; text-decoration:none;">Bus Booking</a>
+        <a href="https://www.booking.com" target="_blank" style="padding:10px 15px; background:#1e88e5; color:white; border-radius:5px; text-decoration:none;">Hotel Booking</a>
+    </div>
+</section>
+<!-- CUSTOMER REVIEWS SECTION -->
+<section>
+  <h2>Customer Reviews</h2>
+  
+  <div class="review-form">
+    <h3>Leave a Review</h3>
+    
+    <!-- Star Rating -->
+    <div class="stars">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+    
+    <!-- Comment Box -->
+    <textarea placeholder="Write your comment..." rows="4"></textarea>
+    
+    <!-- Submit Button -->
+    <button type="submit">Submit Review</button>
+  </div>
+
+  <!-- Display Example Reviews -->
+  <div class="reviews-display">
+    <div class="review">
+      <div class="review-stars">★★★★☆</div>
+      <p>Great website! Helped me plan an amazing trip to Rishikesh.</p>
+    </div>
+    <div class="review">
+      <div class="review-stars">★★★★★</div>
+      <p>Very useful for students traveling on a budget. Loved it!</p>
+    </div>
+  </div>
+</section>
+
+<style>
+section {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.review-form {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.review-form h3 {
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #1e88e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+.reviews-display {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.review {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.review-stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+</style>
+
+
+<footer>
+   Discover Places, Create Memories
+</footer>
+
+</body>
+</html>
+
